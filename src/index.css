@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('./assets/mona/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('./assets/mona/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+
+.poppins {
+  font-family: 'Poppins';
+}
+
+
+
+html {
+  font-family: 'Poppins';
+}

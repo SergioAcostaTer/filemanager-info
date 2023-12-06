@@ -1,10 +1,15 @@
+import Header from "./components/Header"
+import Landing from "./components/Landing"
 
 
 function App() {
 
   return (
     <div>
-        <h1>FileManager</h1>
+      <Header />
+      <Landing />
+
+      <h1>hola</h1>
     </div>
   )
 }
