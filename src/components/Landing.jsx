@@ -2,24 +2,23 @@
 
 const Circle = ({ loc, c, blur = "150px" }) => {
     return (
-        <svg
-            className={`w-[900px] animate-spin-slow blur-[${blur}] text-[${c}] absolute ${loc} z-[-1]`}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 100 100"
+
+        <div className={`w-[900px] animate-spin-slow absolute ${loc} z-[-1] blur-[${blur}] rounded-full h-[900px]`}
+        style={{ backgroundColor: c, filter: `blur(${blur})` }}
         >
-            <circle cx="50" cy="50" r="40" fill="currentColor" />
-        </svg>
+
+        </div>
+
     );
 }
 
 const Landing = () => {
     return (
-        <div className="w-full h-screen flex flex-col pt-[200px] px-[40px] items-center justify-between relative">
+        <div className="w-full h-screen flex flex-col pt-[200px] px-[40px] items-center justify-between relative" id="home">
 
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-[-1] overflow-hidden">
-                <Circle c="#1E40AF" loc="bottom-[-250px] right-[-200px]" />
-                <Circle c="#F7D9EC" loc="bottom-[-250px] left-[-200px]" blur="80px" />
+                <Circle c="#1E40AF" loc="bottom-[-300px] right-[-200px]" />
+                <Circle c="#F7D9EC" loc="bottom-[-300px] left-[-200px]" blur="80px" />
             </div>
 
             <div>
@@ -38,7 +37,7 @@ const Landing = () => {
                 </a>
             </div>
             <div className="p-[4px] pb-0 rounded-t-xl bg-gradient-to-r from-green-300 to-purple-400">
-                <img src="image.png" alt="FTP File Manager" className="w-[1000px] object-contain rounded-t-xl aspect-video object-cover" />
+                <img src="image.png" alt="FTP File Manager" className="w-[1000px] object-contain rounded-t-xl aspect-video object-fill" />
             </div>
         </div>
     );

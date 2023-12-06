@@ -1,5 +1,7 @@
 import Header from "./components/Header"
 import Landing from "./components/Landing"
+import Overview from "./components/Overview"
+import SetUp from "./components/SetUp"
 
 
 function App() {
@@ -8,8 +10,8 @@ function App() {
     <div>
       <Header />
       <Landing />
-
-      <h1>hola</h1>
+      <Overview />
+      <SetUp />
     </div>
   )
 }
